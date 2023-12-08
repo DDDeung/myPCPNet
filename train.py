@@ -252,12 +252,6 @@ class PCPNetTrainer(object):
 
 
     def train(self):
-        # colored console output
-        green = lambda x: '\033[92m' + x + '\033[0m'
-        blue = lambda x: '\033[94m' + x + '\033[0m'
-
-
-
         if self.seed < 0:
             self.seed = random.randint(1, 10000)
 
