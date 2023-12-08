@@ -1,0 +1,48 @@
+output_path: '/Users/koala/Desktop/cuhksz2023sem1/cv/PCPNet/checkpoints'
+name: 'my_single_scale_normal'
+#data
+data:
+  root: '/Users/koala/Desktop/cuhksz2023sem1/cv/PCPNet/pclouds'
+  train: 'trainingset_whitenoise.txt'
+  valid: 'validationset_whitenoise.txt'
+  test: 'validationset_whitenoise.txt'
+
+#training parameters
+train:
+  nepoch: 2000
+  batchsize: 64
+  patch_radius: [0.05]
+  patch_center: 'point'
+  patch_point_count_std: 0
+  patches_per_shape: 1000
+  workers: 1
+  cache_capacity: 100
+  seed: 3627473
+  training_order: 'random'
+  identical_epochs: False
+  lr: 0.0001
+  momentum: 0.9
+  use_pca: False
+  normal_loss: 'ms_euclidean'
+  checkpoint_save_interval: 10
+
+# model parameters
+pcpnet:
+  outputs: ['unoriented_normals']
+  use_point_stn: True
+  use_feat_stn: True
+  sym_op: 'max'
+  point_tuple: 1
+  points_per_patch: 500
+
+experiment_name: 'my_train'
+
+hydra/output: null
+
+
+
+
+
+
+
+
