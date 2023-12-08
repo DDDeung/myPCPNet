@@ -16,6 +16,6 @@ Reproduction of paper: ["PCPNET Learning Local Shape Properties from Raw Point C
 # Quick Start
 1. download point clouds
    ``python pclouds/download_pclouds.py``	
-2. train the network
-3. eval
-4. visualize 
+2. train the network ``python main.py``	
+3. eval``python eval_PCPNet.py``	
+4. visualize ``python visualization.py``	
