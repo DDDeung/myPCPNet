@@ -10,12 +10,15 @@ Reproduction of paper: ["PCPNET Learning Local Shape Properties from Raw Point C
 - [x] visualize predict result
 - [x] wandb
 
+# Quick Start
+1. Configure experimental parameters in config.yaml according to your needs.
+2. download point clouds
+   ``python pclouds/download_pclouds.py``	
+3. train the network ``python main.py``	
+4. eval``python eval_PCPNet.py``	
+5. visualize ``python visualization.py``	
+
 # the quantified error color temperature diagram
 ![visualization](./result.png)
 
-# Quick Start
-1. download point clouds
-   ``python pclouds/download_pclouds.py``	
-2. train the network ``python main.py``	
-3. eval``python eval_PCPNet.py``	
-4. visualize ``python visualization.py``	
+
