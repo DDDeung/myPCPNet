@@ -9,3 +9,13 @@ Reproduction of paper: ["PCPNET Learning Local Shape Properties from Raw Point C
 - [x] replicate training process
 - [x] visualize predict result
 - [x] wandb
+
+# the quantified error color temperature diagram
+![visualization](./result.png)
+
+# Quick Start
+1. download point clouds
+   ``python pclouds/download_pclouds.py``	
+2. train the network
+3. eval
+4. visualize 
